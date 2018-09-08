@@ -1,0 +1,8 @@
+# Ignore
+Tools
+Code/*/*
+
+# Keep
+!.gitignore
+!Code/*/src/
+!Uml/
