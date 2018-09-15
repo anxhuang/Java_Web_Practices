@@ -5,24 +5,6 @@
     <id>UMLClass</id>
     <coordinates>
       <x>20</x>
-      <y>0</y>
-      <w>180</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
-BmiModel
---
-+ getCm(): double
-+ getKg(): double
-+ setCm(double cm)
-+ setKg(double kg)
-bg=cyan</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>20</x>
       <y>230</y>
       <w>180</w>
       <h>150</h>
@@ -214,6 +196,24 @@ bg=cyan</panel_attributes>
 + setInputView(inputView:BmiInputView)
 + setOutputView(outputView:BmiOutputView)
 + process()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>0</y>
+      <w>180</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+BmiModel
+--
++ getCm(): double
++ getKg(): double
++ setCm(cm: double)
++ setKg(kg: double)
+bg=cyan</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
