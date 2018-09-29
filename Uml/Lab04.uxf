@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>200</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
++ process()  {final}
+# input(request: Request)
+# calculate(request: Request)
+# output(request: Request)
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>40</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Main
+--
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>200</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Request
+--
++ setAttribute(key: String, value: Object)
++ getAttribute(key: String): Object
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>370</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>MyRequest
+--
+- map: Map&lt;String, Object&gt;
+--
++ setAttribute(key: String, value: Object)
++ getAttribute(key: String): Object
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>310</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>370</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BmiController
+--
+--
+# input(request: Request)
+# calculate(request: Request)
+# output(request: Request)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>370</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>AvgController
+--
+--
+# input(request: Request)
+# calculate(request: Request)
+# output(request: Request)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>130</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>250</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>310</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>310</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>40</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Container
+--
+- map: Map&lt;String, Container&gt;
+--
++ service(type: String)
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>80</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>70</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>service.txt</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>80</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
