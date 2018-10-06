@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
-      <y>40</y>
+      <x>240</x>
+      <y>30</y>
       <w>240</w>
       <h>90</h>
     </coordinates>
@@ -18,8 +18,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>40</y>
+      <x>20</x>
+      <y>30</y>
       <w>160</w>
       <h>90</h>
     </coordinates>
@@ -33,8 +33,8 @@ ServerSocket
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>170</y>
+      <x>20</x>
+      <y>160</y>
       <w>240</w>
       <h>90</h>
     </coordinates>
@@ -47,8 +47,8 @@ ServerSocket
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>80</y>
+      <x>170</x>
+      <y>70</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
@@ -58,8 +58,8 @@ ServerSocket
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>300</y>
+      <x>20</x>
+      <y>290</y>
       <w>240</w>
       <h>60</h>
     </coordinates>
@@ -71,8 +71,8 @@ ServerSocket
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>400</y>
+      <x>20</x>
+      <y>390</y>
       <w>240</w>
       <h>60</h>
     </coordinates>
@@ -84,8 +84,8 @@ ServerSocket
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>350</y>
+      <x>130</x>
+      <y>340</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
@@ -95,8 +95,8 @@ ServerSocket
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>500</y>
+      <x>20</x>
+      <y>490</y>
       <w>240</w>
       <h>60</h>
     </coordinates>
@@ -108,8 +108,8 @@ ServerSocket
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>450</y>
+      <x>130</x>
+      <y>440</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
@@ -119,12 +119,99 @@ ServerSocket
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>250</y>
+      <x>130</x>
+      <y>240</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>160</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Thread
+--
++ Thread(Runnable)
++ Start()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>160</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Runnable
+--
++ run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>330</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ServerRunnable
+--
++ run()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>240</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>720</x>
+      <y>280</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>實作
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>200</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>550</x>
+      <y>180</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>使用
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

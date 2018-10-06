@@ -37,9 +37,9 @@ public class ServerRunnable implements Runnable {
 
         while (!exit) {
             try {
-                ss = new ServerSocket(PORT); //設定分機號碼
+                ss = new ServerSocket(PORT); //ServerSocket就是接電話的總機socket 需要設定分機號碼
                 ss.setSoTimeout(500); //0.5秒 逾時
-                socket = ss.accept(); //可以接聽電話，接到電話 產生 socket(話筒)
+                socket = ss.accept(); //總機接聽電話，接到電話 產生另一個新socket去負責和client溝通
                 os = socket.getOutputStream(); //取得 輸出 數字(整數) 資料流
 
                 //Charset.defaultCharset()取得系統預設編碼(例如預設為UTF-8, 使用"UTF-8"亦同)

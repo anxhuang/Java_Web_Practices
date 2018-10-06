@@ -12,7 +12,7 @@ public class ClientSocketMain {
 
     public static void main(String[] args) {
         final int PORT = 10000; //分機號碼
-        Socket socket = null;   //話筒
+        Socket socket = null;   //通訊負責人
         InputStream is = null;
         InputStreamReader isr = null;
         BufferedReader br = null;

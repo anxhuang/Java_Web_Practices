@@ -17,4 +17,8 @@ Template and Container: Build Controller's template for multiple types controlle
 
 ## Lab05
 Client and Server: Establish a listening thread to wait request from client, communication data through socket -> I/O stream -> I/O stream W/R -> Buffer W/R  
+Context: My mini TomCat, Too much to say......  
+
+## Lab06
+First Web:  
 
