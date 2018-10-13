@@ -44,7 +44,7 @@ Context: My mini Tomcat, build singleton Context to support attributes access, b
 >Build address input form in MVC structure  
 **Model (Class):** AddressModel.java  
 **View (html, JSP):** addressForm.html (In), showAddress.jsp (Out)  
-**Controller (Servlet):** AddressServlet.java  
+**Controller (Servlet):** AddressController.java  
 
 ## Lab09
 ****

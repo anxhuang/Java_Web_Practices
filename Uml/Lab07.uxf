@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>190</y>
+      <w>110</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+
+HTML
+
+
+bg=cyan
+layer=-2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>170</x>
+      <y>110</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Web C	lient*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>550</x>
+      <y>110</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Web Server (JSP Container)*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>140</y>
+      <w>540</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>
+bg=light_gray
+layer=-3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>240</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Request
+m1=for JSP File
+fg=red</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>190</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+
+
+JSP
+File
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>190</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+
+
+Servlet
+source code
+.java file
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>240</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Translation
+fg=red</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>690</x>
+      <y>240</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Compilation
+fg=red</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>190</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+
+
+Servlet
+compiled
+.class file
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>420</x>
+      <y>330</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bmi.jsp
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>600</x>
+      <y>330</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bmi_jsp.java
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>800</x>
+      <y>330</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bmi_jsp.class
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>350</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;Translation Phase&gt;&gt;
+bg=magenta
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>350</y>
+      <w>210</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;Compilation Phase&gt;&gt;
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>250</y>
+      <w>770</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Execution and Delivering Response
+fg=red</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;220.0;750.0;220.0;750.0;10.0;700.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>250</y>
+      <w>70</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>submit
+button
+layer=3
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
