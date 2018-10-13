@@ -6,4 +6,5 @@ Code/*/*
 # Keep
 !.gitignore
 !Code/*/src/
+!Code/*/web/
 !Uml/
