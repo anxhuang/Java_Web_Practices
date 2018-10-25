@@ -1,4 +1,4 @@
-# MVC Web Practices
+# Java Web Practices
 
 **Language:** Java 1.8.0  
 **Tools:** NetBeans IDE 8.2, UMLet 14.2  
