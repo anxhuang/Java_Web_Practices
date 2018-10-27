@@ -1,4 +1,4 @@
-# MVC Web Practices
+# Java Web Practices
 
 **Language:** Java 1.8.0  
 **Tools:** NetBeans IDE 8.2, UMLet 14.2  
@@ -47,4 +47,24 @@ Context: My mini Tomcat, build singleton Context to support attributes access, b
 **Controller (Servlet):** AddressController.java  
 
 ## Lab09
-****
+**Header:**
+>**HeaderServlet:** A simple servlet to print out all the headers  
+**Client:** A basic java class to send request and check the 'user-agent' header  
+
+## Lab10
+**Web.xml:**
+>Use the web.xml as the Deployment Descriptor(DD) and initialize parameters  
+**Context Parameter:** email, cm, kg  
+**NewServlet:** urlPatterns="/PathToServlet/\*" sc.getInitParameter() -> email  
+**BmiServlet:** urlPatterns="/BmiServlet/\*" this.getInitParameter() -> cm, kg  
+**BmiJsp:** urlPatterns="/BmiJsp" config.getInitParameter() -> cm, kg  
+
+## Lab11
+**checkbox:**  
+>POST form element "checkbox" by html and JSP; check attributes in request, session, servletContext  
+**interestForm(HTML/JSP):** \<form> POST interest:String[] -> InterestServlet  
+**InterestServlet:** interest:String[] -> request, session, servletContext -> programmingForm  
+**programmingForm(HTML/JSP):** \<form> POST -> programming:String[] -> ProgrammingServlet  
+**ProgrammingServlet:** programming:String[] -> request, session, servletContext -> result_view  
+**result_view:** display the attributes by scriplet  
+

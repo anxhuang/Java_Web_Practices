@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>result_view</servlet-name>
+        <jsp-file>/WEB-INF/result_view.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>interestForm</servlet-name>
+        <jsp-file>/WEB-INF/interestForm.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>programmingForm</servlet-name>
+        <jsp-file>/WEB-INF/programmingForm.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>result_view</servlet-name>
+        <url-pattern>/result.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>interestForm</servlet-name>
+        <url-pattern>/interest.form</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>programmingForm</servlet-name>
+        <url-pattern>/programming.form</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
