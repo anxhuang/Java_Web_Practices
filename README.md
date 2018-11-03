@@ -68,3 +68,13 @@ Context: My mini Tomcat, build singleton Context to support attributes access, b
 **ProgrammingServlet:** programming:String[] -> request, session, servletContext -> result_view  
 **result_view:** display the attributes by scriplet  
 
+## Lab12
+**EL JSTL:**
+>Build Customer/Address models and print out the values by EL in JSP view  
+**Address:** model class Address  
+**Customer:** model class Customer  
+**selectCustomer(HTML):** \<form> custId -> SelectCustomerServlet  
+**SelectCustomerServlet:** custId -> request -> CustomerView  
+**CustomerView:** request -> print out by ${(scope).key.field}, if no scope assigned, the prority to find object is pageScope -> requestScope -> sessionScope -> applicationScope  
+
+

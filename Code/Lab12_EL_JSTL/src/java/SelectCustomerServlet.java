@@ -2,49 +2,30 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet(urlPatterns = {"/interest.do"})
-public class InterestServlet extends HttpServlet {
+@WebServlet(urlPatterns = {"/SelectCustomer"})
+public class SelectCustomerServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-
-        request.setCharacterEncoding("UTF-8");
-
         try (PrintWriter out = response.getWriter()) {
 
-            //取得表單資料
-            String[] interest = request.getParameterValues("interest");
+            //取得表單參數 轉型成int
+            String custId = request.getParameter("custId");
+            int id = Integer.parseInt(custId);
 
-            //寄放到請求櫃台
-            request.setAttribute("interest", interest);
+            //寄放資料
+            request.setAttribute("customer", Customer.getCustomer(id));
+            request.setAttribute("customers", Customer.getCustomers());
 
-            //寄放到全域櫃台
-            ServletContext sc = getServletContext();
-            sc.setAttribute("interest", interest);
-
-            //寄放到會話櫃台
-            HttpSession session = request.getSession();
-            session.setAttribute("interest", interest);
-
-            String target;
-            if (request.getParameter("isHtml") != null) {
-                target = "/programmingForm.html";
-            } else {
-                target = "/programming.form";
-            }
-
-            RequestDispatcher rd = request.getRequestDispatcher(target);
-            //※注意! 若後續有「換頁」或「submit」動作 即會建立「新的request」 原本舊request內寄放的資料會消失
-            //※若轉送到HTML 編碼很容易出錯 建議統一使用JSP維持編碼一致性
+            //轉交JSP
+            RequestDispatcher rd = request.getRequestDispatcher("CustomerView.jsp");
             rd.forward(request, response);
         }
     }
