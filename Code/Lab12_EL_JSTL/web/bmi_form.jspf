@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>這裡是頁身 bmi_form.jspf</h2>
+    <form action="bmiViewController.jsp">
+        cm: <input type="text" name="cm" value="162"><br>
+        kg: <input type="text" name="kg" value="63"><br>
+        <input type="submit" value="送出">
+    </form>

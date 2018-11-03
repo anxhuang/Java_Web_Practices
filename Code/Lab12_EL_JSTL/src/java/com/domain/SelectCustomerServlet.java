@@ -27,7 +27,7 @@ public class SelectCustomerServlet extends HttpServlet {
             request.setAttribute("map", Customer.getHashMap());
 
             //轉交JSP
-            RequestDispatcher rd = request.getRequestDispatcher("CustomerView.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("customerView.jsp");
             rd.forward(request, response);
         }
     }

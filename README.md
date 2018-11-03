@@ -70,12 +70,35 @@ Context: My mini Tomcat, build singleton Context to support attributes access, b
 
 ## Lab12
 **EL JSTL:**
->Build Customer/Address models and print out the values by EL in JSP view  
+>**EL:** Expression Language  
+**JSTL:** Java server pages Standard Tag Library  
+  
+Build Customer/Address models and print out the values by EL/JavaBeans in JSP view  
 **Address:** model class Address, implements Serializable for JavaBeans  
-**addressBean:** init Address object, set/get property by JavaBeans, without servlet  
-**Customer:** model class Customer  
+**addressBean(JSP):** init Address object, set/get property by JavaBeans  
+  
+**Customer:** model class Customer, include address:Address[]  
 **selectCustomer(HTML):** \<form> custId -> SelectCustomerServlet  
 **SelectCustomerServlet:** custId -> request -> CustomerView  
-**CustomerView:** request -> print out by ${(scope).key.field}, if no scope assigned, the prority to find object is pageScope -> requestScope -> sessionScope -> applicationScope  
-${map[key]} -> the key is Object, if numeric, default "long", not "int"  
+**customerView(JSP):** request -> print out by ${(scope).key.field}  
+* if no scope assigned, the prority to find object is pageScope -> requestScope -> sessionScope -> applicationScope  
+* ${map[key]} -> the key is Object, if numeric, default "long", not "int"  
+  
+Build bmi model and print out cm,kg,bmi by JavaBeans in JSP view  
+**Bmi:** model Bmi, implements Serializable for JavaBeans  
+**bmiForm(HTML):** \<form> cm,kg -> bmiViewController  
+**bmiViewController(JSP):** set cm,kg by JavaBeans, print out by EL  
+
+Install JSTL library(\*.jar) and test by the following:  
+**jstlDemo(JSP):** add taglib for prefix="c"   
+* \<c:remove> remove object  
+* \<c:catch> catch exception  
+* \<c:if> test condition  
+* \<c:out> print out html script syntax  
+  
+Static include files by JSP Directive  
+**bmi_static_include(JSP):** Main page included JSPF header/form/footer by \<%@ include file="filename" %>  
+
+Dynamic include pages by JSTL  
+**bmi_dynamic_include(JSP):** Main page included JSP header/form/footer by \<jsp:include page="path" />  
 

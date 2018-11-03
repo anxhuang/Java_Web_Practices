@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +15,6 @@
     <body>
         <jsp:useBean id="addr" class="com.domain.Address" scope="session" />
         <jsp:setProperty name="addr" property="address1" value="100 台北市忠孝東路一段" />
-        <jsp:getProperty name="addr" property="address1" />
+        <jsp:getProperty name="addr" property="address1" />      
     </body>
 </html>

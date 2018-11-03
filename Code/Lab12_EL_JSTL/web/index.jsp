@@ -15,6 +15,10 @@
         <h1>
             <a href="selectCustomer.html">Select Customer</a><br>
             <a href="addressBean.jsp">Address JavaBeans</a><br>
+            <a href="bmiForm.html">Bmi JavaBeans</a><br>
+            <a href="jstlDemo.jsp">JSTL Demo</a><br>
+            <a href="bmi_static_include.jsp">Bmi JSPF static include</a><br>
+            <a href="bmi_dynamic_include.jsp">Bmi JSP dynamic include</a><br>
         </h1>
     </body>
 </html>
