@@ -1,3 +1,4 @@
+package com.domain;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,6 +24,7 @@ public class SelectCustomerServlet extends HttpServlet {
             //寄放資料
             request.setAttribute("customer", Customer.getCustomer(id));
             request.setAttribute("customers", Customer.getCustomers());
+            request.setAttribute("map", Customer.getHashMap());
 
             //轉交JSP
             RequestDispatcher rd = request.getRequestDispatcher("CustomerView.jsp");

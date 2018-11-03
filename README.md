@@ -71,10 +71,11 @@ Context: My mini Tomcat, build singleton Context to support attributes access, b
 ## Lab12
 **EL JSTL:**
 >Build Customer/Address models and print out the values by EL in JSP view  
-**Address:** model class Address  
+**Address:** model class Address, implements Serializable for JavaBeans  
+**addressBean:** init Address object, set/get property by JavaBeans, without servlet  
 **Customer:** model class Customer  
 **selectCustomer(HTML):** \<form> custId -> SelectCustomerServlet  
 **SelectCustomerServlet:** custId -> request -> CustomerView  
 **CustomerView:** request -> print out by ${(scope).key.field}, if no scope assigned, the prority to find object is pageScope -> requestScope -> sessionScope -> applicationScope  
-
+${map[key]} -> the key is Object, if numeric, default "long", not "int"  
 

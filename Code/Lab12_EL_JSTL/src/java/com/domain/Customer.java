@@ -1,3 +1,4 @@
+package com.domain;
 
 import java.util.HashMap;
 
@@ -42,7 +43,7 @@ public class Customer {
         return addresses[DELIVERY];
     }
 
-    //測試用的假資料
+    //以下為測試用的假資料
     private static final HashMap<Integer, Customer> customers = new HashMap<>();
 
     //靜態初始化區塊，用來初始化靜態資料
@@ -59,6 +60,14 @@ public class Customer {
 
     public static HashMap<Integer, Customer> getCustomers() {
         return customers;
+    }
+
+    public static HashMap getHashMap() {
+        HashMap map = new HashMap();
+        map.put(1, "int");
+        map.put(1L, "long");
+        map.put("1", "String");
+        return map;
     }
 
 }

@@ -1,11 +1,18 @@
+package com.domain;
 
-public class Address {
+import java.io.Serializable;
+
+//implements Serializable for JavaBeans
+public class Address implements Serializable {
 
     private String address1;
     private String address2;
     private String city;
     private String region;
     private String postCode;
+
+    public Address() {
+    }
 
     public Address(String address1, String address2, String city, String region, String postCode) {
         this.address1 = address1;

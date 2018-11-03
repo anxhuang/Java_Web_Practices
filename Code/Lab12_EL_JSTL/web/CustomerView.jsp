@@ -41,5 +41,27 @@
                 <li>${customer.deliveryAddress.postCode}</li>
             </ul>
         </p>
+        <p>透過 index 存取 Array: <br>
+            <ul>
+                <li>${customer.addresses[2].address1}</li>
+                <li>${customer.addresses[2].address2}</li>
+                <li>${customer.addresses[2].city}</li>
+                <li>${customer.addresses[2].region}</li>
+                <li>${customer.addresses[2].postCode}</li>
+            </ul>
+        </p>
+        <p>透過 key 存取 Map ( key 若為整數，EL 預設採用 Long 型態): <br>
+            <ul>
+                <li>${map[1]}</li>
+                <li>${map[(1).intValue()]}</li>
+                <li>${map["1"]}</li>
+                <br>
+                <li>${customers[1]} 1為Long型態→無輸出</li> 
+                <li>${customers[(1).intValue()]}</li>
+                <li>${customers[(1).intValue()].name}</li>
+                <li>${customers[(1).intValue()].officeAddress.address1}</li>
+                <li>${customers[(1).intValue()].addresses[2].address1}</li>
+            </ul>
+        </p>
     </body>
 </html>

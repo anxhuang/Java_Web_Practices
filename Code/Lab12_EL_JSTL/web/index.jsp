@@ -12,6 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1><a href="selectCustomer.html">Select Customer</a></h1>
+        <h1>
+            <a href="selectCustomer.html">Select Customer</a><br>
+            <a href="addressBean.jsp">Address JavaBeans</a><br>
+        </h1>
     </body>
 </html>
